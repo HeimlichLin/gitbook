@@ -1,3 +1,7 @@
+---
+description: Table建立的語法，包含comments、key、indexes的新增
+---
+
 # 基本Table建立
 
 #### 基本Table建立
