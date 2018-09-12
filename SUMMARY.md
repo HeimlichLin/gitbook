@@ -1,7 +1,7 @@
 # Table of contents
 
 * [筆記](README.md)
-* [Oracle PL/SQL基本語法](part1oracle-plsql-ji-ben-yu-fa.md)
+* [Oracle PL/SQL基本語法](part1/oracle-plsql-ji-ben-yu-fa.md)
     * [基本Table建立](part1/writing.md)
     * [基本CRUD語法](part1/gitbook.md)
     * [Table與Column查詢](part1/gitbook.md)
