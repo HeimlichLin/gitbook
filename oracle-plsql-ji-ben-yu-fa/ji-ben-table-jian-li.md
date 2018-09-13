@@ -26,12 +26,12 @@ maxextents unlimited
 
 **-- Add comments to the table**
 
-`comment on table COUNTRYCODE  
-is '國別代碼表';`
+comment on table COUNTRYCODE  
+is '國別代碼表';
 
 **-- Add comments to the columns**
 
-`comment on column COUNTRYCODE.CONTINENT  
+comment on column COUNTRYCODE.CONTINENT  
 is '洲別';  
 comment on column COUNTRYCODE.COUNTRYID  
 is '國別代碼';  
@@ -40,49 +40,49 @@ is '國家中文名稱';
 comment on column COUNTRYCODE.COUNTRYENAME  
 is '國家英文名稱';  
 comment on column COUNTRYCODE.NEWSOUTHCOUNTRY  
-is '新南向國家';`
+is '新南向國家';
 
 **-- Create/Recreate primary, unique and foreign key constraints**
 
-`alter table COUNTRYCODE  
-add constraint COUNTRYCODE_PK primary key (CONTINENT, COUNTRYID)  
+alter table COUNTRYCODE  
+add constraint COUNTRYCODE\_PK primary key \(CONTINENT, COUNTRYID\)  
 using index  
 tablespace DATA  
 pctfree 10  
 initrans 2  
 maxtrans 255  
 storage  
-(  
+\(  
 initial 64K  
 next 1M  
 minextents 1  
 maxextents unlimited  
-);`
+\);
 
 **-- Create/Recreate indexes**
 
-`create index COUNTRYCODE_IDX_1 on COUNTRYCODE (CONTINENT)  
+create index COUNTRYCODE\_IDX\_1 on COUNTRYCODE \(CONTINENT\)  
 tablespace DATA  
 pctfree 10  
 initrans 2  
 maxtrans 255  
 storage  
-(  
+\(  
 initial 64K  
 next 1M  
 minextents 1  
 maxextents unlimited  
-);  
-create index COUNTRYCODE_IDX_2 on COUNTRYCODE (COUNTRYID, COUNTRYENAME)  
+\);  
+create index COUNTRYCODE\_IDX\_2 on COUNTRYCODE \(COUNTRYID, COUNTRYENAME\)  
 tablespace DATA  
 pctfree 10  
 initrans 2  
 maxtrans 255  
 storage  
-(  
+\(  
 initial 64K  
 next 1M  
 minextents 1  
 maxextents unlimited  
-);`
+\);
 
