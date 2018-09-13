@@ -5,6 +5,7 @@
   * [基本Table建立](oracle-plsql-ji-ben-yu-fa/ji-ben-table-jian-li.md)
   * [基本CRUD語法](oracle-plsql-ji-ben-yu-fa/ji-ben-crud-yu-fa.md)
   * [其他語法](oracle-plsql-ji-ben-yu-fa/qi-ta-yu-fa.md)
+  * [Trigger](oracle-plsql-ji-ben-yu-fa/untitled.md)
 * [卷 II](juan-ii/README.md)
   * [期待反馈](juan-ii/qi-dai-fan-kui.md)
   * [更好的写作工具](juan-ii/geng-hao-de-xie-zuo-gong-ju.md)
