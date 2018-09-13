@@ -24,7 +24,7 @@ minextents 1
 maxextents unlimited  
 \);
 
-**-- Add comments to the table**
+### **-- Add comments to the table**
 
 comment on table COUNTRYCODE  
 is '國別代碼表';
@@ -42,7 +42,7 @@ is '國家英文名稱';
 comment on column COUNTRYCODE.NEWSOUTHCOUNTRY  
 is '新南向國家';
 
-**-- Create/Recreate primary, unique and foreign key constraints**
+### **-- Create/Recreate keys**
 
 alter table COUNTRYCODE  
 add constraint COUNTRYCODE\_PK primary key \(CONTINENT, COUNTRYID\)  
@@ -59,7 +59,7 @@ minextents 1
 maxextents unlimited  
 \);
 
-**-- Create/Recreate indexes**
+### **-- Create/Recreate indexes**
 
 create index COUNTRYCODE\_IDX\_1 on COUNTRYCODE \(CONTINENT\)  
 tablespace DATA  
