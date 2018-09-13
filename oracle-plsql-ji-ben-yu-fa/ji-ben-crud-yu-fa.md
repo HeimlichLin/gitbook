@@ -1,18 +1,20 @@
 # 基本CRUD語法
 
-### -- Select
+### -- 查、刪、增、改
+
+#### Select
 
 * SELECT t.\* FROM table t WHERE t.name = 'XXX' AND t.number = '1';
 
-### -- Delete
+#### Delete
 
 * DELETE FROM table t WHERE t.yearmonth &lt; '20180101';
 
-### -- Insert
+#### Insert
 
 * INSERT INTO table t \( column\_a, column\_b \) VALUES \( 'AAA', 'BBB' \);
 
-### -- Update
+#### Update
 
 * UPDATE table t SET column\_a = 'AAA123' WHERE column\_a = 'AAA' AND column\_b = 'BBB';
 
