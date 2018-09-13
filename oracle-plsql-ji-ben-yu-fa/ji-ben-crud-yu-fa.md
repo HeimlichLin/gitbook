@@ -79,9 +79,11 @@
 * 時間轉字串：TO\_CHAR\(year, 'YYYY'\)
 * 字串轉時間 ：TO\_DATE\('20180101','YYYYMMDD'\)
 
-### -- 擷取資料
+### -- 處理資料
 
-* SUBSTR\(year, 3, 2\)   _第三位開始，長度為二_
+* 擷取欄位資料：SUBSTR\(year, 3, 2\)   _第三位開始，長度為二_
+* 欄位資料組合：year\|\|month
+* 欄位資料組合：CONCAT\('year', 'month'\)
 
 ### -- 欄位值運算
 
@@ -89,11 +91,6 @@
 * 欄位平均：AVG\(value\_amt\)
 * 欄位最大：MAX\(value\_amt\)
 * 欄位最小：MIN\(value\_amt\)
-
-### -- 欄位組合
-
-* year\|\|month
-* CONCAT\('year', 'month'\)
 
 ### -- 替換值
 
