@@ -20,18 +20,13 @@
 
 * 以及：WHERE...AND
 * 或：WHERE...OR
-
-### -- 查詢選擇欄位，並列出不重複的所有組合
-
 * SELECT DISTINCT year, month FROM table;
 
-### --查詢出的欄位另外命名
+### --查詢欄位
 
-* SELECT year 年度 FROM table;
-
-### --查詢出的欄位直接給值
-
-* SELECT '2018' year FROM table;
+* 查詢選擇欄位，並列出不重複的所有組合：SELECT DISTINCT year, month FROM table;
+* 欄位另外命名：SELECT year 年度 FROM table;
+* 欄位直接給值：SELECT '2018' year FROM table;
 
 ### -- 兩項查詢結果組合一起呈現
 
@@ -40,24 +35,30 @@
 * INTERSECT：AND 交集，都有的才會出現，重複的只會出現一次
 * MINUS：相減，第一個有，第二個沒有的才會出現
 
-### -- 欄位符合其中之一項
+### -- 查詢條件
+
+#### 欄位符合其中之一項
 
 * IN\('AAA','BBB'\)
 
-### -- 欄位模糊查詢
+#### 欄位模糊查詢
 
 * 內含：LIKE '%AAA%'
 * 內不含：NOT LIKE '%AAA%
 
-### -- 是否為空
+#### 是否為空
 
 * 為空：IS NULL
 * 不為空：IS NOT NULL
 
-### -- 區間條件
+#### 區間條件
 
 * num &gt;= '1' AND num &lt;= '3'
 * num BETWEEN '1' AND '3'
+
+#### 前幾筆
+
+* ROWNUM = 1;
 
 ### -- 結果資料排序
 
@@ -72,14 +73,6 @@
 ### -- 群組後，再下條件
 
 * SELECT count\(\*\), year, month FROM table group by year, month having year = '2018';
-
-### -- 前幾筆
-
-* ROWNUM = 1;
-
-### -- 如果是NULL,則用此值
-
-* NVL\(year, '--'\)
 
 ### -- 時間與字串轉換
 
@@ -104,6 +97,7 @@
 
 ### -- 替換值
 
+* 如果是NULL，則用此值：NVL\(year, '--'\)
 * REPLACE\(year, '2018', 'thisyear'\)
 * DECODE\(year, '2017', 'lastyear', '2018', 'thisyear', 'whocares'\)
 * \(CASE WHEN year = '2017' THEN 'lastyear'  WHEN year = '2018' THEN 'thisyear'  ELSE 'whocares' END\) year
