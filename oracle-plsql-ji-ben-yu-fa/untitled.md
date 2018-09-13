@@ -2,8 +2,6 @@
 
 ### 組成
 
-### 組成
-
 * 觸發事件：在何種情況下觸發Trigger，例如：INSERT，UPDATE，DELETE
 * 觸發時間：觸發事件和Trigger時間關係，BEFORE，AFTER
 * 觸發執行的動作：例如：INSERT，UPDATE，DELETE
