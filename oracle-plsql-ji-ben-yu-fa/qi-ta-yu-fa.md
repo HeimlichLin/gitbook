@@ -1,5 +1,20 @@
 # 其他語法
 
+### 較常用基本資料型態
+
+* char：固定長度字串
+* varchar2：可變長度字串
+* long：長資料
+* number\(x, y\)：可以存儲浮點值或整數值，x整數位數，y小數位數
+* date ： 日期，DD-MON-YY
+* rowid：列標籤，系統自建，唯一值
+* boolean：布林值
+
+### --註解
+
+* 單行註解：「--」
+* 多行註解：「/_」開始 ，「_/」結束
+
 ### -- 删除约束
 
 * ALTER TABLE table DROP CONSTRAINT TABLE\_PK CASCADE;
