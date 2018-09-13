@@ -21,6 +21,10 @@ UPDATE table t SET column\_a = 'AAA123' WHERE column\_a = 'AAA' AND column\_b = 
 * 以及：WHERE...AND
 * 或：WHERE...OR
 
+### -- 
+
+SELECT DISTINCT year, month FROM table;
+
 ### --查詢出的欄位另外命名
 
 SELECT year 年度 FROM table;
@@ -31,7 +35,10 @@ SELECT '2018' year FROM table;
 
 ### -- 兩項查詢結果組合一起呈現
 
-UNION ALL
+* UNION：OR 聯集，重複的只會出現一次
+* UNION ALL：OR 聯集，允許重複出現
+* INTERSECT：AND 交集，都有的才會出現，重複的只會出現一次
+* MINUS：相減，第一個有，第二個沒有的才會出現
 
 ### -- 欄位符合其中之一項
 
@@ -57,6 +64,15 @@ IN\('AAA','BBB'\)
 * 大到小：ORDER BY num DESC
 * 小到大：ORDER BY num ASC
 
+### -- 計算筆數
+
+* SELECT count\(\*\) FROM table;
+* SELECT count\(\*\), year, month FROM table group by year, month;
+
+### -- 群組後，再下條件
+
+* SELECT count\(\*\), year, month FROM table group by year, month having year = '2018';
+
 ### -- 前幾筆
 
 ROWNUM = 1;
@@ -80,6 +96,7 @@ SUM\(value\_amt\)
 
 ### -- 替換值
 
+* REPLACE\(year, '2018', 'thisyear'\)
 * DECODE\(year, '2017', 'lastyear', '2018', 'thisyear', 'whocares'\)
 * \(CASE WHEN year = '2017' THEN 'lastyear'  WHEN year = '2018' THEN 'thisyear'  ELSE 'whocares' END\) year
 
