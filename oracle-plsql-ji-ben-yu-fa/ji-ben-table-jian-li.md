@@ -1,7 +1,5 @@
 # 基本Table建立
 
-## 基本Table建立
-
 ### **-- Create table**
 
 create table COUNTRYCODE  
