@@ -3,7 +3,7 @@
 #### 基本Table建立
 
 **-- Create table**
-[link text](/<chapter>/<article>.md#<Create table>)
+
 create table COUNTRYCODE  
 \(  
 CONTINENT VARCHAR2\(50\) not null,  
