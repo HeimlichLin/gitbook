@@ -1,6 +1,6 @@
 # 其他語法
 
-### 較常用基本資料型態
+### -- 較常用基本資料型態
 
 * char：固定長度字串
 * varchar2：可變長度字串
@@ -44,4 +44,13 @@
 
 * TRUNCAFTE TABLE table;
 *  DELETE FROM table;
+
+### -- Table與Column查詢
+
+1. SELECT \* FROM ALL\_TAB\_COMMENTS;
+2. SELECT \* FROM ALL\_COL\_COMMENTS;
+3. SELECT \* FROM ALL\_CONS\_COLUMNS;
+4. SELECT \* FROM ALL\_TAB\_COLS;
+5. SELECT \* FROM ALL\_IND\_COLUMNS;
+6. SELECT \* FROM ALL\_INDEXES;
 
