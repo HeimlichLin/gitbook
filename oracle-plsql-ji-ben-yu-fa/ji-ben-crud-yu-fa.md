@@ -28,13 +28,6 @@
 * 欄位另外命名：SELECT year 年度 FROM table;
 * 欄位直接給值：SELECT '2018' year FROM table;
 
-### -- 兩項查詢結果組合一起呈現
-
-* UNION：OR 聯集，重複的只會出現一次
-* UNION ALL：OR 聯集，允許重複出現
-* INTERSECT：AND 交集，都有的才會出現，重複的只會出現一次
-* MINUS：相減，第一個有，第二個沒有的才會出現
-
 ### -- 查詢條件
 
 #### 欄位符合其中之一項
@@ -99,7 +92,26 @@
 * DECODE\(year, '2017', 'lastyear', '2018', 'thisyear', 'whocares'\)
 * \(CASE WHEN year = '2017' THEN 'lastyear'  WHEN year = '2018' THEN 'thisyear'  ELSE 'whocares' END\) year
 
+### -- 兩項查詢結果組合一起呈現
 
+* UNION：OR 聯集，重複的只會出現一次
+* UNION ALL：OR 聯集，允許重複出現
+* INTERSECT：AND 交集，都有的才會出現，重複的只會出現一次
+* MINUS：相減，第一個有，第二個沒有的才會出現
 
+### -- Table連接
 
+#### 左外部連接：LEFT JOIN/ LEFT OUTER JOIN
+
+* SELECT \* FROM table\_a LEFT JOIN table\_b ON a.comment\_a = b.comment\_b AND a.comment\_aa = b.comment\_bb
+* SELECT \* FROM table\_a, table\_b WHERE a.comment\_a = b.comment\_b\(+\) AND a.comment\_aa = b.comment\_bb\(+\)
+
+#### 右外部連接：RIGHT JOIN/ RIGHT OUTER JOIN
+
+* SELECT \* FROM table\_a RIGHT JOIN table\_b ON a.comment\_a = b.comment\_b AND a.comment\_aa = b.comment\_bb
+* SELECT \* FROM table\_a, table\_b WHERE a.comment\_a\(+\) = b.comment\_b AND a.comment\_aa\(+\) = b.comment\_bb
+
+#### 全外部連接：FULL JOIN/ FULL OUTER JOIN
+
+* SELECT \* FROM table\_a FULL JOIN table\_b ON a.comment\_a = b.comment\_b AND a.comment\_aa = b.comment\_bb
 
