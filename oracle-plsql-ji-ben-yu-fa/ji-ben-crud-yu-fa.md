@@ -90,9 +90,17 @@
 
 * SUBSTR\(year, 3, 2\)   _第三位開始，長度為二_
 
-### -- 加總每筆資料的此欄位值
+### -- 欄位值運算
 
-* SUM\(value\_amt\)
+* 欄位加總：SUM\(value\_amt\)
+* 欄位平均：AVG\(value\_amt\)
+* 欄位最大：MAX\(value\_amt\)
+* 欄位最小：MIN\(value\_amt\)
+
+### -- 欄位組合
+
+* year\|\|month
+* CONCAT\('year', 'month'\)
 
 ### -- 替換值
 
