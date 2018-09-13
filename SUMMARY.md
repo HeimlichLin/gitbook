@@ -2,7 +2,7 @@
 
 * [筆記](README.md)
 * [Oracle PL/SQL基本語法](oracle-plsql-ji-ben-yu-fa/README.md)
-  * [基本Table建立](oracle-plsql-ji-ben-yu-fa/ji-ben-table-jian-li.md#Create table)
+  * [基本Table建立](oracle-plsql-ji-ben-yu-fa/ji-ben-table-jian-li.md)
   * [基本CRUD語法](oracle-plsql-ji-ben-yu-fa/ji-ben-crud-yu-fa.md)
   * [Table與Column查詢](oracle-plsql-ji-ben-yu-fa/table-yu-column-cha-xun.md)
   * [其他語法](oracle-plsql-ji-ben-yu-fa/qi-ta-yu-fa.md)
