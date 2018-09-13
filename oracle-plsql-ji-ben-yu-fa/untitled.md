@@ -1,25 +1,30 @@
 # Trigger
 
-```text
-create or replace trigger TGA_FOSP_QUEOPERATEYEAR
+### 組成
+
+* 觸發事件：在何種情況下觸發Trigger，例如：INSERT，UPDATE，DELETE
+* 觸發時間：觸發事件和Trigger時間關係，BEFORE，AFTER
+* 觸發執行的動作：例如：INSERT，UPDATE，DELETE
+* 觸發頻率：STATEMENT觸發一次，ROW每一行數據影響一次
+
+```sql
+create or replace trigger TGA_TEST
   after update OR delete 
-on pfospmgr.fosp_queoperateyear
+on testmgr.test_year
 REFERENCING NEW AS New OLD AS Old
 FOR EACH ROW
 BEGIN
    if updating then
-        Insert Into pfospmgr.fosp_queoperateyear_h (year, month, bondno, ftzmode, prodnotemain, prodnotesec, ftzemploynum, totalemploynum, landarea, buildarea, totalrev, oprev, unoprev, totalcost, salarycost, depcost, taxcost, purchasecost, rentcost, othercost, opmode, transpercent, logipercent, pluspercent, fixpercent, trandepercent, exhibitpercent, otherpercent, othernote, netassets, fixassetscost, advancenote, filluser, fillusertit, fillusertel, filluserfax, filluseremail, createdate, createuserid, confflag, confuserid, confdate, confdesc, dealflag, dealdate, easyprocecode, easyprocedesc, easyprocepercent, easyproceqty, easyprocevalue, returndesc, updatetime, processstate)
-                VALUES ( :OLD.year,:OLD.month,:OLD.bondno,:OLD.ftzmode,:OLD.prodnotemain,:OLD.prodnotesec,:OLD.ftzemploynum,:OLD.totalemploynum,:OLD.landarea,:OLD.buildarea,:OLD.totalrev,:OLD.oprev,:OLD.unoprev,:OLD.totalcost,:OLD.salarycost,:OLD.depcost,:OLD.taxcost,:OLD.purchasecost,:OLD.rentcost,:OLD.othercost,:OLD.opmode,:OLD.transpercent,:OLD.logipercent,:OLD.pluspercent,:OLD.fixpercent,:OLD.trandepercent,:OLD.exhibitpercent,:OLD.otherpercent,:OLD.othernote,:OLD.netassets,:OLD.fixassetscost,:OLD.advancenote,:OLD.filluser,:OLD.fillusertit,:OLD.fillusertel,:OLD.filluserfax,:OLD.filluseremail,:OLD.createdate,:OLD.createuserid,:OLD.confflag,:OLD.confuserid,:OLD.confdate,:OLD.confdesc,:OLD.dealflag,:OLD.dealdate,:OLD.easyprocecode,:OLD.easyprocedesc,:OLD.easyprocepercent,:OLD.easyproceqty,:OLD.easyprocevalue,:OLD.returndesc
-                ,to_char(sysdate,'YYYYMMDDHH24MISS'),'UPDATE');
+        Insert Into testmgr.test_year_month (year, month, processstate)
+                VALUES ( :OLD.year,:OLD.month,'UPDATE');
    elsif deleting then
-        Insert Into pfospmgr.fosp_queoperateyear_h (year, month, bondno, ftzmode, prodnotemain, prodnotesec, ftzemploynum, totalemploynum, landarea, buildarea, totalrev, oprev, unoprev, totalcost, salarycost, depcost, taxcost, purchasecost, rentcost, othercost, opmode, transpercent, logipercent, pluspercent, fixpercent, trandepercent, exhibitpercent, otherpercent, othernote, netassets, fixassetscost, advancenote, filluser, fillusertit, fillusertel, filluserfax, filluseremail, createdate, createuserid, confflag, confuserid, confdate, confdesc, dealflag, dealdate, easyprocecode, easyprocedesc, easyprocepercent, easyproceqty, easyprocevalue, returndesc, updatetime, processstate)
-                VALUES ( :OLD.year,:OLD.month,:OLD.bondno,:OLD.ftzmode,:OLD.prodnotemain,:OLD.prodnotesec,:OLD.ftzemploynum,:OLD.totalemploynum,:OLD.landarea,:OLD.buildarea,:OLD.totalrev,:OLD.oprev,:OLD.unoprev,:OLD.totalcost,:OLD.salarycost,:OLD.depcost,:OLD.taxcost,:OLD.purchasecost,:OLD.rentcost,:OLD.othercost,:OLD.opmode,:OLD.transpercent,:OLD.logipercent,:OLD.pluspercent,:OLD.fixpercent,:OLD.trandepercent,:OLD.exhibitpercent,:OLD.otherpercent,:OLD.othernote,:OLD.netassets,:OLD.fixassetscost,:OLD.advancenote,:OLD.filluser,:OLD.fillusertit,:OLD.fillusertel,:OLD.filluserfax,:OLD.filluseremail,:OLD.createdate,:OLD.createuserid,:OLD.confflag,:OLD.confuserid,:OLD.confdate,:OLD.confdesc,:OLD.dealflag,:OLD.dealdate,:OLD.easyprocecode,:OLD.easyprocedesc,:OLD.easyprocepercent,:OLD.easyproceqty,:OLD.easyprocevalue,:OLD.returndesc
-                ,to_char(sysdate,'YYYYMMDDHH24MISS'),'DELETE');
+        Insert Into testmgr.test_year_month (year, month, processstate)
+                VALUES ( :OLD.year,:OLD.month,'DELETE');        
    end if;
    
    EXCEPTION
      WHEN OTHERS THEN
        RAISE;  
-end TGA_FOSP_QUEOPERATEYEAR;
+end TGA_TEST;
 ```
 
