@@ -4,25 +4,25 @@
 
 **-- Create table**
 
-`create table COUNTRYCODE  
-(  
-CONTINENT VARCHAR2(50) not null,  
-COUNTRYID VARCHAR2(5) not null,  
-COUNTRYNAME VARCHAR2(100) not null,  
-COUNTRYENAME VARCHAR2(200),  
-NEWSOUTHCOUNTRY VARCHAR2(2 BYTE) default 'N'  
-)  
+create table COUNTRYCODE  
+\(  
+CONTINENT VARCHAR2\(50\) not null,  
+COUNTRYID VARCHAR2\(5\) not null,  
+COUNTRYNAME VARCHAR2\(100\) not null,  
+COUNTRYENAME VARCHAR2\(200\),  
+NEWSOUTHCOUNTRY VARCHAR2\(2 BYTE\) default 'N'  
+\)  
 tablespace DATA  
 pctfree 10  
 initrans 1  
 maxtrans 255  
 storage  
-(  
+\(  
 initial 64K  
 next 1M  
 minextents 1  
 maxextents unlimited  
-);`
+\);
 
 **-- Add comments to the table**
 
