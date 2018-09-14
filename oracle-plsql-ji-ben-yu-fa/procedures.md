@@ -1,16 +1,50 @@
-# Procedures
+# Stored Procedures
 
 ### 組成
 
 * Package： 像JAVA的Package， 用來區隔相同名稱的 Stored Procedure 或是 Function
-* Stored Procedure：沒有回傳值
+* Procedure：沒有回傳值
 * Function：有回傳值
+
+#### 官網的範例
+
+```sql
+-- 定義 PACKAGE
+CREATE OR REPLACE PACKAGE TEST_PACKAGE
+AS
+   -- 宣告 PROCEDURE 與 FUNCTION
+   PROCEDURE TEST_PROCEDURE(TEST_PROCEDURE_ID IN NUMBER);
+   FUNCTION TEST_FUNCTION(TEST_FUNCTION_ID  IN NUMBER) RETURN NUMBER;
+END TEST_PACKAGE;
+
+-- PACKAGE 的實作內容
+CREATE OR REPLACE PACKAGE BODY TEST_PACKAGE
+AS
+   -- PROCEDURE 的實作內容
+   PROCEDURE TEST_PROCEDURE(TEST_PROCEDURE_ID IN NUMBER)
+   AS
+   BEGIN
+       -- 實作
+       NULL;
+   END TEST_PROCEDURE;
+  
+   --FUNCTION 的實作內容
+   FUNCTION TEST_FUNCTION(TEST_FUNCTION_ID  IN NUMBER) RETURN NUMBER
+   AS
+   BEGIN
+       --實作
+       RETURN NULL;
+   END TEST_FUNCTION;
+END TEST_PACKAGE;
+```
 
 ### Procedure and Function
 
 * 宣告部份： DECLARE」， 定義變數與常數
 * 執行部份：「BEGIN」與「END」， 程式執行
 * 外處理部份：「EXCEPTION」， 處理程式中可能會發生的錯誤
+
+#### 隨手寫個Procedure示意
 
 ```sql
 CREATE OR REPLACE PROCEDURE PROC_TEST(
