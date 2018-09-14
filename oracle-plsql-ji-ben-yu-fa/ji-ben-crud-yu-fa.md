@@ -22,11 +22,11 @@
 
 * 以及：WHERE...AND
 * 或：WHERE...OR
-* SELECT DISTINCT year, month FROM table;
 
 ### 查詢欄位
 
 * 查詢選擇欄位，並列出不重複的所有組合：SELECT DISTINCT year, month FROM table;
+* 查詢選擇欄位，並列出不重複的所有組合：SELECT UNIQUE year, month FROM table;
 * 欄位另外命名：SELECT year 年度 FROM table;
 * 欄位直接給值：SELECT '2018' year FROM table;
 
@@ -103,17 +103,37 @@
 
 ### Table連接
 
-#### 左外部連接：LEFT JOIN/ LEFT OUTER JOIN
+#### 內部連接：INNER JOIN  僅顯示兩資料表對應欄位中值相同的欄位
 
-* SELECT \* FROM table\_a LEFT JOIN table\_b ON a.comment\_a = b.comment\_b AND a.comment\_aa = b.comment\_bb
-* SELECT \* FROM table\_a, table\_b WHERE a.comment\_a = b.comment\_b\(+\) AND a.comment\_aa = b.comment\_bb\(+\)
+* SELECT \* FROM table\_a INNER JOIN table\_b ON a.comment\_a = b.comment\_b AND a.comment\_aa = b.comment\_bb;
 
-#### 右外部連接：RIGHT JOIN/ RIGHT OUTER JOIN
+#### 左外部連接：LEFT JOIN/ LEFT OUTER JOIN  以左邊為底，右邊缺的留空
 
-* SELECT \* FROM table\_a RIGHT JOIN table\_b ON a.comment\_a = b.comment\_b AND a.comment\_aa = b.comment\_bb
-* SELECT \* FROM table\_a, table\_b WHERE a.comment\_a\(+\) = b.comment\_b AND a.comment\_aa\(+\) = b.comment\_bb
+* SELECT \* FROM table\_a LEFT JOIN table\_b ON a.comment\_a = b.comment\_b AND a.comment\_aa = b.comment\_bb;
+* SELECT \* FROM table\_a, table\_b WHERE a.comment\_a = b.comment\_b\(+\) AND a.comment\_aa = b.comment\_bb\(+\);
 
-#### 全外部連接：FULL JOIN/ FULL OUTER JOIN
+#### 右外部連接：RIGHT JOIN/ RIGHT OUTER JOIN  以右邊為底，左邊缺的留空
 
-* SELECT \* FROM table\_a FULL JOIN table\_b ON a.comment\_a = b.comment\_b AND a.comment\_aa = b.comment\_bb
+* SELECT \* FROM table\_a RIGHT JOIN table\_b ON a.comment\_a = b.comment\_b AND a.comment\_aa = b.comment\_bb;
+* SELECT \* FROM table\_a, table\_b WHERE a.comment\_a\(+\) = b.comment\_b AND a.comment\_aa\(+\) = b.comment\_bb;
+
+#### 全外部連接：FULL JOIN/ FULL OUTER JOIN  互相缺的留空
+
+* SELECT \* FROM table\_a FULL JOIN table\_b ON a.comment\_a = b.comment\_b AND a.comment\_aa = b.comment\_bb;
+
+#### 自然連接：NATVRAL JOIN  兩個table的相同欄位名稱，進行資料比對
+
+* SELECT \* FROM table\_a NATVRAL JOIN table\_b;
+
+#### 逐一連接：CROSS JOIN  A表的每一筆資料跟B表的每一筆資料做聯結\(相乘\)
+
+* SELECT \* FROM table\_a CROSS JOIN table\_b;
+
+#### 自身連接：SELF JOIN  自己 JOIN 自己
+
+* SELECT \* FROM table\_a SELF JOIN table\_b;
+
+#### 指定連結：JOIN USING  透過指定欄位連結
+
+* SELECT \* FROM table\_a JOIN table\_b USING\(comment\_a\);
 

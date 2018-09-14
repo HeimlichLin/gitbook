@@ -40,9 +40,19 @@ END TEST_PACKAGE;
 
 ### Procedure and Function
 
-* 宣告部份： DECLARE」， 定義變數與常數
+* 宣告部份： 定義變數與常數
 * 執行部份：「BEGIN」與「END」， 程式執行
 * 外處理部份：「EXCEPTION」， 處理程式中可能會發生的錯誤
+
+```sql
+Header
+AS --IS也行
+[宣告區 ...]
+BEGIN
+[執行區 ...]
+[例外處理 ...]
+END;
+```
 
 #### 隨手寫個Procedure示意
 
