@@ -105,21 +105,21 @@
 
 #### 內部連接：INNER JOIN  僅顯示兩資料表對應欄位中值相同的欄位
 
-* SELECT \* FROM table\_a INNER JOIN table\_b ON a.comment\_a = b.comment\_b AND a.comment\_aa = b.comment\_bb;
+* SELECT \* FROM table\_a a INNER JOIN table\_b b ON a.comment\_a = b.comment\_b AND a.comment\_aa = b.comment\_bb;
 
 #### 左外部連接：LEFT JOIN/ LEFT OUTER JOIN  以左邊為底，右邊缺的留空
 
-* SELECT \* FROM table\_a LEFT JOIN table\_b ON a.comment\_a = b.comment\_b AND a.comment\_aa = b.comment\_bb;
-* SELECT \* FROM table\_a, table\_b WHERE a.comment\_a = b.comment\_b\(+\) AND a.comment\_aa = b.comment\_bb\(+\);
+* SELECT \* FROM table\_a a LEFT JOIN table\_b b ON a.comment\_a = b.comment\_b AND a.comment\_aa = b.comment\_bb;
+* SELECT \* FROM table a, table b WHERE a.comment\_a = b.comment\_b\(+\) AND a.comment\_aa = b.comment\_bb\(+\);
 
 #### 右外部連接：RIGHT JOIN/ RIGHT OUTER JOIN  以右邊為底，左邊缺的留空
 
-* SELECT \* FROM table\_a RIGHT JOIN table\_b ON a.comment\_a = b.comment\_b AND a.comment\_aa = b.comment\_bb;
-* SELECT \* FROM table\_a, table\_b WHERE a.comment\_a\(+\) = b.comment\_b AND a.comment\_aa\(+\) = b.comment\_bb;
+* SELECT \* FROM table\_a a RIGHT JOIN table\_b b ON a.comment\_a = b.comment\_b AND a.comment\_aa = b.comment\_bb;
+* SELECT \* FROM table a, table b WHERE a.comment\_a\(+\) = b.comment\_b AND a.comment\_aa\(+\) = b.comment\_bb;
 
 #### 全外部連接：FULL JOIN/ FULL OUTER JOIN  互相缺的留空
 
-* SELECT \* FROM table\_a FULL JOIN table\_b ON a.comment\_a = b.comment\_b AND a.comment\_aa = b.comment\_bb;
+* SELECT \* FROM table\_a a FULL JOIN table\_b b ON a.comment\_a = b.comment\_b AND a.comment\_aa = b.comment\_bb;
 
 #### 自然連接：NATVRAL JOIN  兩個table的相同欄位名稱，進行資料比對
 
