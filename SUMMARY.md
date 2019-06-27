@@ -7,4 +7,6 @@
   * [其他語法](oracle-plsql-ji-ben-yu-fa/qi-ta-yu-fa.md)
   * [Stored Procedures](oracle-plsql-ji-ben-yu-fa/procedures.md)
   * [Trigger](oracle-plsql-ji-ben-yu-fa/untitled.md)
+* [DOS指令](pi-ci-dang-1.md)
+* [GIT基本指令](git-ji-ben-yu-fa.md)
 
