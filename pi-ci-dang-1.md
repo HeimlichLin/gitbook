@@ -1,4 +1,6 @@
-# DOS指令
+# Bat指令
 
-Microsoft bat與Linux shell的常用指令，用於減少繁瑣的操作。
+Microsoft 簡單的 Bat指令，用於減少繁瑣的操作。
+
+
 
