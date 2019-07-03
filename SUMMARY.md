@@ -12,5 +12,11 @@
   * [合併檔案](pi-ci-dang-1/he-bing-dang-an.md)
   * [複製檔案](pi-ci-dang-1/fu-zhi-dang-an.md)
   * [取得檔案資訊](pi-ci-dang-1/qu-de-dang-an-zi-xun.md)
-* [GIT基本指令](git-ji-ben-yu-fa.md)
+* [GIT基本指令](git-ji-ben-yu-fa/README.md)
+  * [基本指令](git-ji-ben-yu-fa/ji-ben-zhi-ling.md)
+  * [git 開發流程](git-ji-ben-yu-fa/git-kai-fa-liu-cheng.md)
+  * [git 建立新的 Repository 指令](git-ji-ben-yu-fa/untitled-2.md)
+  * [git 合併相關指令](git-ji-ben-yu-fa/untitled-1.md)
+  * [git Commit Message 指令](git-ji-ben-yu-fa/untitled.md)
+  * [git 還原指令](git-ji-ben-yu-fa/git-hai-yuan-zhi-ling.md)
 
