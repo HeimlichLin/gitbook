@@ -7,6 +7,10 @@
   * [其他語法](oracle-plsql-ji-ben-yu-fa/qi-ta-yu-fa.md)
   * [Stored Procedures](oracle-plsql-ji-ben-yu-fa/procedures.md)
   * [Trigger](oracle-plsql-ji-ben-yu-fa/untitled.md)
-* [Bat指令](pi-ci-dang-1.md)
+* [Bat批次檔](pi-ci-dang-1/README.md)
+  * [執行SQL](pi-ci-dang-1/zhi-hang-sql.md)
+  * [合併檔案](pi-ci-dang-1/he-bing-dang-an.md)
+  * [複製檔案](pi-ci-dang-1/fu-zhi-dang-an.md)
+  * [取得檔案資訊](pi-ci-dang-1/qu-de-dang-an-zi-xun.md)
 * [GIT基本指令](git-ji-ben-yu-fa.md)
 

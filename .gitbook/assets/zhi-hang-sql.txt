@@ -1,0 +1,2 @@
+Path=C:\oracle\ora92\bin
+SQLPLUS -S userid/password@10.88.8.2 @SQL指令檔案.txt>result.log
