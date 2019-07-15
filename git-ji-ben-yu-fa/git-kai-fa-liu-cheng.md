@@ -9,8 +9,8 @@ GITLAB FLOW
 開發新功能流程步驟   
 1. git checkout master   
 2. git pull origin master   
-3. git checkout \[員工編號\(develop\)\]   
-4. git -rebase \[員工編號\(develop\)\]
+3. git checkout XXXX\[員工編號\(develop\)\]   
+4. git -rebase XXXX\[員工編號\(develop\)\]
 
 進行開發....   
 1. git commit -m 'feature/XXXX"   
@@ -22,16 +22,17 @@ GITLAB FLOW
 每日更新流程   
 1. git checkout master   
 2. git pull origin master   
-3. git checkout 6284 \[員工編號\(develop\)\]   
+3. git checkout XXXX \[員工編號\(develop\)\]   
 4. git merge master   
-5. git checkout 6284 6. pause
+5. git checkout XXXX  
+6. pause
 
 繼續開發 Deploy至MASTER環境   
 1. git checkout master   
 2. git pull origin master  
-3. git merge 6284  
+3. git merge XXXX  
 4. git push -u origin master  
-5. git checkout 6284  
+5. git checkout XXXX  
 6. pause
 
 Deploy至SIT環境   
@@ -39,7 +40,7 @@ Deploy至SIT環境
 2. git pull origin r\_sit   
 3. git merge master   
 4. git push -u origin r\_sit   
-5. git checkout 6284  
+5. git checkout XXXX  
 6. pause
 
 Deploy至UAT環境   
@@ -47,7 +48,7 @@ Deploy至UAT環境
 2. git pull origin r\_uat   
 3. git merge master   
 4. git push -u origin r\_uat   
-5. git checkout 6284  
+5. git checkout XXXX  
 6. pause
 
 Deploy營運   
