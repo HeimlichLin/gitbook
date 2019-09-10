@@ -16,7 +16,4 @@
   * [基本指令](git-ji-ben-yu-fa/ji-ben-zhi-ling.md)
   * [git 開發流程](git-ji-ben-yu-fa/git-kai-fa-liu-cheng.md)
   * [git 建立新的 Repository 指令](git-ji-ben-yu-fa/untitled-2.md)
-  * [git 合併相關指令](git-ji-ben-yu-fa/untitled-1.md)
-  * [git Commit Message 指令](git-ji-ben-yu-fa/untitled.md)
-  * [git 還原指令](git-ji-ben-yu-fa/git-hai-yuan-zhi-ling.md)
 
