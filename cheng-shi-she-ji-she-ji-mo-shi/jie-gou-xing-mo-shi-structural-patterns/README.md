@@ -1,3 +1,7 @@
+---
+description: 關注如何組織物件以實現更大規模的結構和關係。這些模式有助於構建複雜的物件結構，同時保持這些結構的靈活性和可維護性。
+---
+
 # 結構型模式（Structural Patterns）
 
 1. [代理模式（Proxy Pattern）](dai-li-mo-shi-proxy-pattern.md)

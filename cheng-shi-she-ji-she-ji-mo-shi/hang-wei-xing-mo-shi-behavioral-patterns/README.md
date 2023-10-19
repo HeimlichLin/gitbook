@@ -1,3 +1,7 @@
+---
+description: 關注物件之間的互動和分工，以實現彈性和可擴展的行為。這些模式有助於管理物件之間的通訊和責任分配。
+---
+
 # 行為型模式（Behavioral Patterns）
 
 1. [策略模式（Strategy Pattern）](ce-lve-mo-shi-strategy-pattern.md)
