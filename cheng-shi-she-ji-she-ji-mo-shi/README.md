@@ -20,13 +20,13 @@
 
 ## [行為型模式（Behavioral Patterns）](./#hang-wei-xing-mo-shi-behavioral-patterns)
 
-1. 策略模式（Strategy Pattern）
-2. 命令模式（Command Pattern）
-3. 責任鏈模式（Chain of Responsibility Pattern）
-4. 狀態模式（State Pattern）
-5. 觀察者模式（Observer Pattern）
-6. 中介者模式（Mediator Pattern）
-7. 備忘錄模式（Memento Pattern）
-8. 訪問者模式（Visitor Pattern）
-9. 模板方法模式（Template Method Pattern）
-10. 解釋器模式（Interpreter Pattern）
+1. [ce-lve-mo-shi-strategy-pattern.md](hang-wei-xing-mo-shi-behavioral-patterns/ce-lve-mo-shi-strategy-pattern.md "mention")
+2. [ming-ling-mo-shi-command-pattern.md](hang-wei-xing-mo-shi-behavioral-patterns/ming-ling-mo-shi-command-pattern.md "mention")
+3. [ze-ren-lian-mo-shi-chain-of-responsibility-pattern.md](hang-wei-xing-mo-shi-behavioral-patterns/ze-ren-lian-mo-shi-chain-of-responsibility-pattern.md "mention")
+4. [zhuang-tai-mo-shi-state-pattern.md](hang-wei-xing-mo-shi-behavioral-patterns/zhuang-tai-mo-shi-state-pattern.md "mention")
+5. [guan-cha-zhe-mo-shi-observer-pattern.md](hang-wei-xing-mo-shi-behavioral-patterns/guan-cha-zhe-mo-shi-observer-pattern.md "mention")
+6. [zhong-jie-zhe-mo-shi-mediator-pattern.md](hang-wei-xing-mo-shi-behavioral-patterns/zhong-jie-zhe-mo-shi-mediator-pattern.md "mention")
+7. [bei-wang-lu-mo-shi-memento-pattern.md](hang-wei-xing-mo-shi-behavioral-patterns/bei-wang-lu-mo-shi-memento-pattern.md "mention")
+8. [fang-wen-zhe-mo-shi-visitor-pattern.md](hang-wei-xing-mo-shi-behavioral-patterns/fang-wen-zhe-mo-shi-visitor-pattern.md "mention")
+9. [mo-ban-fang-fa-mo-shi-template-method-pattern.md](hang-wei-xing-mo-shi-behavioral-patterns/mo-ban-fang-fa-mo-shi-template-method-pattern.md "mention")
+10. [jie-shi-qi-mo-shi-interpreter-pattern.md](hang-wei-xing-mo-shi-behavioral-patterns/jie-shi-qi-mo-shi-interpreter-pattern.md "mention")
